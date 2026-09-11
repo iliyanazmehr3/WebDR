@@ -12,7 +12,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                en: ['Figtree', ...defaultTheme.fontFamily.sans],
+                fa: ['Vazirmatn', 'Tahoma', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 'brand-dark': '#120E24',
