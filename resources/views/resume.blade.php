@@ -15,7 +15,6 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            background-color: #F8FAFC;
             color: #1E293B;
         }
         #resume-canvas {
@@ -47,7 +46,7 @@
         }
     </style>
 </head>
-<body class="{{ $locale == 'fa' ? 'font-fa' : 'font-en' }}">
+<body class="{{ $locale == 'fa' ? 'font-fa' : 'font-en' }} bg-gradient-to-br from-white to-gray-100 min-h-screen">
     <!-- 3D Canvas Background -->
     <canvas id="resume-canvas"></canvas>
 
@@ -69,23 +68,56 @@
             <!-- Timeline Card 1 -->
             <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
                 <h3 class="text-2xl font-bold text-brand-text mb-2">
-                    {{ $locale == 'fa' ? 'کارشناسی علوم کامپیوتر' : 'BSc Computer Science' }}
+                    {{ $locale == 'fa' ? 'تحصیلات' : 'Education' }}
                 </h3>
                 <p class="text-gray-600">
+                    {{ $locale == 'fa' ? 'دکتری علوم کامپیوتر' : 'Ph.D. Computer Science' }}<br>
                     {{ $locale == 'fa' ? 'دانشگاه نمونه' : 'University of Example' }}
                 </p>
                 <span class="block mt-4 text-sm text-brand-accent font-semibold">2018 - 2022</span>
             </div>
 
-            <!-- Timeline Card 2 -->
+            <!-- Publications -->
             <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
                 <h3 class="text-2xl font-bold text-brand-text mb-2">
-                    {{ $locale == 'fa' ? 'توسعه‌دهنده ارشد نرم‌افزار' : 'Senior Software Engineer' }}
+                    {{ $locale == 'fa' ? 'انتشارات' : 'Publications' }}
                 </h3>
-                <p class="text-gray-600">
-                    {{ $locale == 'fa' ? 'شرکت فناوری پیشرو' : 'Leading Tech Corp' }}
+                <ul class="list-disc list-inside text-gray-600 space-y-2 mt-4">
+                    <li>{{ $locale == 'fa' ? 'مقاله علمی پیشگام ۱' : 'Groundbreaking Research Paper 1' }}</li>
+                    <li>{{ $locale == 'fa' ? 'مقاله علمی پیشگام ۲' : 'Groundbreaking Research Paper 2' }}</li>
+                </ul>
+            </div>
+
+            <!-- Conferences -->
+            <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
+                <h3 class="text-2xl font-bold text-brand-text mb-2">
+                    {{ $locale == 'fa' ? 'کنفرانس‌ها' : 'Conferences' }}
+                </h3>
+                <p class="text-gray-600 mt-4">
+                    {{ $locale == 'fa' ? 'سخنران کلیدی در رویدادهای بین‌المللی مختلف.' : 'Keynote speaker at various international events.' }}
                 </p>
-                <span class="block mt-4 text-sm text-brand-accent font-semibold">2022 - Present</span>
+            </div>
+
+            <!-- Taught Courses -->
+            <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
+                <h3 class="text-2xl font-bold text-brand-text mb-2">
+                    {{ $locale == 'fa' ? 'دروس تدریس شده' : 'Taught Courses' }}
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 mt-4">
+                    <li>{{ $locale == 'fa' ? 'هوش مصنوعی پیشرفته' : 'Advanced Artificial Intelligence' }}</li>
+                    <li>{{ $locale == 'fa' ? 'مبانی مهندسی نرم‌افزار' : 'Fundamentals of Software Engineering' }}</li>
+                </ul>
+            </div>
+
+            <!-- Attended Courses -->
+            <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
+                <h3 class="text-2xl font-bold text-brand-text mb-2">
+                    {{ $locale == 'fa' ? 'دوره‌های گذرانده شده' : 'Attended Courses' }}
+                </h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 mt-4">
+                    <li>{{ $locale == 'fa' ? 'یادگیری ماشین کاربردی' : 'Applied Machine Learning' }}</li>
+                    <li>{{ $locale == 'fa' ? 'رایانش ابری' : 'Cloud Computing' }}</li>
+                </ul>
             </div>
         </section>
 

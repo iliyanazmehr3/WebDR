@@ -38,3 +38,28 @@
   2026-09-11 12:50:57 /resume/en ................................... ~ 0.11ms
   2026-09-11 12:50:57 /build/assets/app-CpQPYmMN.css ............... ~ 0.05ms
   2026-09-11 12:50:57 /build/assets/app-Btn-4YNO.js ................ ~ 0.25ms
+
+   INFO  Environment modified. Restarting server...
+
+   INFO  Server running on [http://0.0.0.0:8000].
+
+  Press Ctrl+C to stop the server
+
+  2026-09-11 13:33:06 /resume/en ................................. ~ 500.92ms
+  2026-09-11 13:33:06 /build/assets/app-rMqBvFgd.css ............... ~ 0.05ms
+  2026-09-11 13:33:06 /build/assets/app-Btn-4YNO.js ................ ~ 0.22ms
+  2026-09-11 13:33:10 /secure-portal-auth .......................... ~ 0.10ms
+  2026-09-11 13:33:10 /build/assets/app-rMqBvFgd.css ............... ~ 0.12ms
+  2026-09-11 13:33:11 /test-presentation ........................... ~ 0.12ms
+  2026-09-11 13:36:23 /resume/en ................................... ~ 0.19ms
+  2026-09-11 13:36:23 /build/assets/app-rMqBvFgd.css ............... ~ 0.05ms
+  2026-09-11 13:36:23 /build/assets/app-Btn-4YNO.js ................ ~ 0.20ms
+  2026-09-11 13:36:27 /secure-portal-auth .......................... ~ 0.11ms
+  2026-09-11 13:36:27 /build/assets/app-rMqBvFgd.css ............... ~ 0.04ms
+  2026-09-11 13:36:28 /test-presentation ........................... ~ 0.12ms
+  2026-09-11 13:41:43 /resume/en ................................... ~ 0.13ms
+  2026-09-11 13:41:43 /build/assets/app-rMqBvFgd.css ............... ~ 0.05ms
+  2026-09-11 13:41:43 /build/assets/app-Btn-4YNO.js ................ ~ 0.19ms
+  2026-09-11 13:41:47 /secure-portal-auth .......................... ~ 0.11ms
+  2026-09-11 13:41:47 /build/assets/app-rMqBvFgd.css ............... ~ 0.04ms
+  2026-09-11 13:41:48 /test-presentation ........................... ~ 0.10ms

@@ -53,12 +53,12 @@
 
             <!-- Language Selection Buttons -->
             <div class="flex gap-4">
-                <button class="px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-brand-text font-semibold font-en transition-all shadow-sm hover:shadow-md">
+                <a href="/resume/en" class="px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-brand-text font-semibold font-en transition-all shadow-sm hover:shadow-md text-center block">
                     English
-                </button>
-                <button class="px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-brand-text font-semibold font-fa transition-all shadow-sm hover:shadow-md">
+                </a>
+                <a href="/resume/fa" class="px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-brand-text font-semibold font-fa transition-all shadow-sm hover:shadow-md text-center block">
                     فارسی
-                </button>
+                </a>
             </div>
         </div>
     </div>
