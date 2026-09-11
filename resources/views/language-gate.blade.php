@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Gate</title>
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
+    <!-- Import Vazirmatn font for Persian text -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.0.0/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
         body, html {
             margin: 0;
@@ -12,7 +14,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #000;
+            background-color: #F8FAFC; /* brand-light */
         }
         #three-canvas {
             position: absolute;
@@ -37,24 +39,24 @@
     <canvas id="three-canvas"></canvas>
 
     <div id="content-wrapper">
-        <div id="language-card" class="bg-brand-dark/40 backdrop-blur-md border border-brand-border rounded-2xl p-8 shadow-[0_0_20px_#9A84EB] flex flex-col items-center opacity-0 transform scale-90">
+        <div id="language-card" class="bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 shadow-xl flex flex-col items-center opacity-0 transform scale-90">
             <!-- Profile Picture Placeholder -->
-            <div class="w-32 h-32 rounded-full bg-brand-pink/20 border-2 border-brand-pink shadow-[0_0_15px_#C21064] mb-6 flex items-center justify-center overflow-hidden">
-                <span class="text-brand-pink font-bold text-xl">Photo</span>
+            <div class="w-32 h-32 rounded-full bg-brand-light border-2 border-gray-200 shadow-md mb-6 flex items-center justify-center overflow-hidden">
+                <span class="text-brand-accent font-bold text-xl font-en">Photo</span>
             </div>
 
             <!-- Bilingual Name -->
             <div class="text-center mb-8">
-                <h1 class="text-3xl font-bold text-white mb-2 tracking-wide">John Doe</h1>
-                <h2 class="text-2xl font-bold text-gray-300" dir="rtl">جان دو</h2>
+                <h1 class="text-3xl font-bold text-brand-text mb-2 tracking-wide font-en">Dr. Maryam Hajiesmaeili</h1>
+                <h2 class="text-2xl font-bold text-gray-600 font-fa" dir="rtl">دکتر مریم حاجی اسمعیلی</h2>
             </div>
 
             <!-- Language Selection Buttons -->
             <div class="flex gap-4">
-                <button class="px-6 py-3 bg-brand-purple/20 hover:bg-brand-purple/40 border border-brand-purple rounded-lg text-white font-semibold transition-all shadow-[0_0_10px_#9A84EB] hover:shadow-[0_0_20px_#9A84EB]">
+                <button class="px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-brand-text font-semibold font-en transition-all shadow-sm hover:shadow-md">
                     English
                 </button>
-                <button class="px-6 py-3 bg-brand-pink/20 hover:bg-brand-pink/40 border border-brand-pink rounded-lg text-white font-semibold transition-all shadow-[0_0_10px_#C21064] hover:shadow-[0_0_20px_#C21064]">
+                <button class="px-6 py-3 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-brand-text font-semibold font-fa transition-all shadow-sm hover:shadow-md">
                     فارسی
                 </button>
             </div>

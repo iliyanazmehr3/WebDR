@@ -16,10 +16,11 @@ export default {
                 fa: ['Vazirmatn', 'Tahoma', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                'brand-dark': '#120E24',
-                'brand-border': '#362479',
-                'brand-pink': '#C21064',
-                'brand-purple': '#9A84EB',
+                'brand-light': '#F8FAFC', // Very light gray/slate
+                'brand-glass': 'rgba(255, 255, 255, 0.7)',
+                'brand-glass-border': 'rgba(255, 255, 255, 0.5)',
+                'brand-accent': '#64748B', // Muted slate blue for accents
+                'brand-text': '#1E293B',
             },
         },
     },

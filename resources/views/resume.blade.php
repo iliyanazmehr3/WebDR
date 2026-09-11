@@ -15,8 +15,8 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            background-color: #000;
-            color: #fff;
+            background-color: #F8FAFC;
+            color: #1E293B;
         }
         #resume-canvas {
             position: fixed;
@@ -34,7 +34,7 @@
             min-height: 100%;
             display: flex;
             flex-direction: column;
-            padding-bottom: 4rem; /* for footer */
+            padding-bottom: 4rem;
         }
         .hero-section {
             min-height: 100vh;
@@ -44,7 +44,6 @@
         }
         .hero-text {
             text-align: center;
-            text-shadow: 0 0 20px #9A84EB;
         }
     </style>
 </head>
@@ -55,11 +54,11 @@
     <div id="content-wrapper">
         <!-- Hero Section -->
         <section class="hero-section px-8">
-            <div class="hero-text bg-brand-dark/30 backdrop-blur-sm p-10 rounded-2xl border border-brand-border shadow-[0_0_20px_#C21064]">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">
+            <div class="hero-text bg-brand-glass backdrop-blur-sm p-10 rounded-2xl border border-brand-glass-border shadow-xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 text-brand-text">
                     {{ $locale == 'fa' ? 'نوآوری و علوم کامپیوتر' : 'Innovation & Computer Science' }}
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-300">
+                <p class="text-xl md:text-2xl text-gray-600">
                     {{ $locale == 'fa' ? 'به رزومه من خوش آمدید' : 'Welcome to my resume' }}
                 </p>
             </div>
@@ -68,46 +67,30 @@
         <!-- Resume / Timeline Section -->
         <section class="container mx-auto px-4 py-20 flex flex-col items-center gap-12">
             <!-- Timeline Card 1 -->
-            <div class="timeline-card bg-brand-dark/40 backdrop-blur-md border border-brand-border rounded-2xl p-8 w-full max-w-3xl shadow-[0_0_15px_#9A84EB] opacity-0 transform translate-y-10">
-                <h3 class="text-2xl font-bold text-brand-pink mb-2">
+            <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
+                <h3 class="text-2xl font-bold text-brand-text mb-2">
                     {{ $locale == 'fa' ? 'کارشناسی علوم کامپیوتر' : 'BSc Computer Science' }}
                 </h3>
-                <p class="text-gray-300">
+                <p class="text-gray-600">
                     {{ $locale == 'fa' ? 'دانشگاه نمونه' : 'University of Example' }}
                 </p>
-                <span class="block mt-4 text-sm text-brand-purple">2018 - 2022</span>
+                <span class="block mt-4 text-sm text-brand-accent font-semibold">2018 - 2022</span>
             </div>
 
             <!-- Timeline Card 2 -->
-            <div class="timeline-card bg-brand-dark/40 backdrop-blur-md border border-brand-border rounded-2xl p-8 w-full max-w-3xl shadow-[0_0_15px_#C21064] opacity-0 transform translate-y-10">
-                <h3 class="text-2xl font-bold text-brand-purple mb-2">
+            <div class="timeline-card bg-brand-glass backdrop-blur-md border border-brand-glass-border rounded-2xl p-8 w-full max-w-3xl shadow-lg opacity-0 transform translate-y-10">
+                <h3 class="text-2xl font-bold text-brand-text mb-2">
                     {{ $locale == 'fa' ? 'توسعه‌دهنده ارشد نرم‌افزار' : 'Senior Software Engineer' }}
                 </h3>
-                <p class="text-gray-300">
+                <p class="text-gray-600">
                     {{ $locale == 'fa' ? 'شرکت فناوری پیشرو' : 'Leading Tech Corp' }}
                 </p>
-                <span class="block mt-4 text-sm text-brand-pink">2022 - Present</span>
+                <span class="block mt-4 text-sm text-brand-accent font-semibold">2022 - Present</span>
             </div>
         </section>
 
-        <!-- Footer / Partners Section -->
-        <footer class="mt-auto border-t border-brand-border bg-brand-dark/60 backdrop-blur-md py-12">
-            <div class="container mx-auto px-4 text-center">
-                <h4 class="text-xl text-gray-300 mb-8">
-                    {{ $locale == 'fa' ? 'همکاران و شرکا' : 'Partners & Affiliations' }}
-                </h4>
-                <div class="flex justify-center items-center">
-                    <!-- Placeholder for Bank Refah Kargaran Innovation Center Logo -->
-                    <div class="flex flex-col items-center">
-                        <svg class="w-32 h-32 mb-4 text-brand-pink drop-shadow-[0_0_10px_#C21064]" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                        <span class="text-sm text-gray-400 font-semibold tracking-wide">
-                            {{ $locale == 'fa' ? 'مرکز نوآوری بانک رفاه کارگران' : 'Bank Refah Kargaran Innovation Center' }}
-                        </span>
-                    </div>
-                </div>
-            </div>
+        <footer class="mt-auto border-t border-gray-200 bg-brand-glass backdrop-blur-md py-6 text-center text-sm text-gray-500">
+            &copy; {{ date('Y') }} Dr. Maryam Hajiesmaeili. {{ $locale == 'fa' ? 'تمامی حقوق محفوظ است.' : 'All rights reserved.' }}
         </footer>
     </div>
 </body>

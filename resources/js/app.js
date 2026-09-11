@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
-        // Create material with brand-purple color
+        // Create material for light theme
         const particlesMaterial = new THREE.PointsMaterial({
             size: 0.005,
-            color: '#9A84EB',
+            color: '#64748B', // Muted slate blue
             transparent: true,
-            opacity: 0.8,
-            blending: THREE.AdditiveBlending
+            opacity: 0.5,
+            blending: THREE.NormalBlending
         });
 
         const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
@@ -101,10 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create a wireframe Icosahedron
         const geometry = new THREE.IcosahedronGeometry(2, 0);
         const material = new THREE.MeshBasicMaterial({
-            color: 0xC21064, // Brand pink
+            color: 0x64748B, // Muted slate blue
             wireframe: true,
             transparent: true,
-            opacity: 0.3
+            opacity: 0.2
         });
         const icosahedron = new THREE.Mesh(geometry, material);
         scene.add(icosahedron);
